@@ -50,7 +50,7 @@ function logout()
   localStorage.removeItem('userid');
   localStorage.removeItem('password');
   alert('You Are Logged Out!');
-
+  window.open('login.html');
 }
 
 
