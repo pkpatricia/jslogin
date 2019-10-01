@@ -17,9 +17,10 @@ function check(form)
  /*the following code checkes whether the entered userid and password are matching*/
  if (userid == 'myuserid' && password == 'mypassword')
   {
-    window.open('myPage.html');
     localStorage.setItem('userid', 'myuserid');
     localStorage.setItem('password', 'mypassword');
+    window.open('myPage.html');
+    
     alert('Welcome!' + localStorage.getItem('userid'));
   }
  else
