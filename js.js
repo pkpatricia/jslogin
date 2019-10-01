@@ -19,9 +19,12 @@ function check()
   {
     localStorage.setItem('userid', 'myuserid');
     localStorage.setItem('password', 'mypassword');
-    window.open('myPage.html');
+    
     
     alert('Welcome!' + localStorage.getItem('userid'));
+
+
+    window.open('myPage.html');
   }
  else
  {
