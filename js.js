@@ -29,6 +29,7 @@ function check()
  else
  {
    alert("Error Password or Username");
+   window.location.reload();
   }
 }
 
@@ -38,7 +39,7 @@ function isLoggedIn()
 
     if (x != undefined) {
       alert('Welcome! ' + localStorage.getItem('userid') + ' !!!!') ;
-
+      window.open('myPage.html');
     }
 
 }
@@ -49,7 +50,7 @@ function logout()
   localStorage.removeItem('userid');
   localStorage.removeItem('password');
   alert('You Are Logged Out!');
-  
+
 }
 
 
