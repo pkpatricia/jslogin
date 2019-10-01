@@ -9,13 +9,13 @@ localStorage.clear();
 
 */
 
-let userid = form.userid.value;
-let password = form.password.value;
-
-function check(form)
+function check()
 {
- /*the following code checkes whether the entered userid and password are matching*/
- if (userid == 'myuserid' && password == 'mypassword')
+  var userid = document.getElementById('userid').value;
+  var password = document.getElementById('password').value;
+  //var name = name_element.value;
+  /*the following code checkes whether the entered userid and password are matching*/
+ if ((userid == 'myuserid') && (password == 'mypassword'))
   {
     localStorage.setItem('userid', 'myuserid');
     localStorage.setItem('password', 'mypassword');
