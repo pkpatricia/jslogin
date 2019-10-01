@@ -21,7 +21,7 @@ function check()
     localStorage.setItem('password', 'mypassword');
     
     
-    alert('Welcome!' + localStorage.getItem('userid'));
+    alert('Welcome! ' + localStorage.getItem('userid') + ' !!!!') ;
 
 
     window.open('myPage.html');
