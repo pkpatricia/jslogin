@@ -31,3 +31,25 @@ function check()
    alert("Error Password or Username");
   }
 }
+
+function isLoggedIn() 
+{
+  var x = localStorage.getItem('userid');
+
+    if (x != undefined) {
+      alert('Welcome! ' + localStorage.getItem('userid') + ' !!!!') ;
+
+    }
+
+}
+
+function logout()
+{
+
+  localStorage.removeItem('userid');
+  localStorage.removeItem('password');
+  alert('You Are Logged Out!');
+  
+}
+
+
