@@ -53,8 +53,9 @@ function isLoggedIn()
 function logout()
 {
 
-  localStorage.removeItem('userid');
-  localStorage.removeItem('password');
+  //localStorage.removeItem('userid');
+  //localStorage.removeItem('password');
+  localStorage.clear();
   alert('You Are Logged Out!');
   //window.close('mypage.html');
   //window.open('login.html');
