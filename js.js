@@ -23,8 +23,10 @@ function check()
     
     alert('Welcome! ' + localStorage.getItem('userid') + ' !!!!') ;
 
-
-    window.open('myPage.html');
+    //window.close('login.html');
+    //window.open("", "_self");
+    window.open('myPage.html', "_self");
+    
   }
  else
  {
@@ -39,7 +41,11 @@ function isLoggedIn()
 
     if (x != undefined) {
       alert('Welcome! ' + localStorage.getItem('userid') + ' !!!!') ;
-      window.open('myPage.html');
+      //window.close('login.html');
+      //window.open('myPage.html');
+      window.open('myPage.html', "_self");
+    
+      
     }
 
 }
@@ -50,7 +56,10 @@ function logout()
   localStorage.removeItem('userid');
   localStorage.removeItem('password');
   alert('You Are Logged Out!');
-  window.open('login.html');
+  //window.close('mypage.html');
+  //window.open('login.html');
+  window.open('login.html', "_self");
+    
 }
 
 
